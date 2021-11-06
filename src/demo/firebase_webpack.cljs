@@ -1,6 +1,8 @@
 (ns ^:figwheel-hooks demo.firebase-webpack
   (:require
-    [reagent.dom :as r.dom]))
+    ["@firebase/app"  :as firebase]
+    ["@firebase/auth" :as auth]
+    [reagent.dom     :as r.dom]))
 
 
 (defn app []
@@ -16,4 +18,9 @@
   (mount))
 
 
-(defonce start-up (do (mount) true))
+(defonce start-up
+  (do
+
+    (mount)
+
+    true))
