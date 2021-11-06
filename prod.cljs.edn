@@ -1,3 +1,0 @@
-{:main       demo.firebase-webpack
- :output-dir "out"
- :output-to  "out/dev-main.js"}
