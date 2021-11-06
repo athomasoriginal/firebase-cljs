@@ -17,6 +17,7 @@ There are two branches.  Each branch uses a different bundling strategy:
 - Visit App
   http://localhost:9500
 
+Note: we don't call webpack because fighweel will do this for us.
 
 ## Require Method #2 - `:foreign-libs`
 
