@@ -1,5 +1,5 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
+const fb =  require('firebase/app');
+const fbAuth =  require('firebase/auth');
 
 const config = {
   apiKey:            "AIzaSyB-imAo26zTQr0e3yDefHX32fu-O_sS1Dw",
@@ -10,7 +10,7 @@ const config = {
   storageBucket:     "cljs-firebase-48930.appspot.com"
 }
 
-const auth = initializeApp(config)
-const app = getAuth(auth);
+const auth = fb.initializeApp(config)
+const app = fbAuth.getAuth(auth);
 
-console.log(app);
+console.log(auth);
