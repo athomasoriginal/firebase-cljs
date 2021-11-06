@@ -1,5 +1,5 @@
-const fb =  require('firebase/app');
-const fbAuth =  require('firebase/auth');
+// https://github.com/clojure/clojurescript/blob/514274cab1d1798a1754758502e6fee2ab32103a/src/main/clojure/cljs/closure.clj#L1745
+import { npmDeps } from './deps.js'
 
 const config = {
   apiKey:            "AIzaSyB-imAo26zTQr0e3yDefHX32fu-O_sS1Dw",
@@ -10,7 +10,11 @@ const config = {
   storageBucket:     "cljs-firebase-48930.appspot.com"
 }
 
-const auth = fb.initializeApp(config)
-const app = fbAuth.getAuth(auth);
 
-console.log(auth);
+const auth = npmDeps["firebase/app"].initializeApp(config)
+const app = npmDeps["firebase/auth"].getAuth(auth);
+
+console.log(auth)
+console.log(app)
+
+
