@@ -37,4 +37,18 @@ There are two branches.  Each branch uses a different bundling strategy:
   http://localhost:9500
 
 
+## Require Method #3 - `:target :bundle` (vanilla CLJS)
+
+
+- Checkout `firebase-method-3` branch
+- Build JavaScript Deps
+  ```bash
+  yarn install
+  ```
+- Run App
+  ```bash
+  clj -M -m cljs.main -co build.edn -v -c -r
+  ```
+- Visit App
+  http://localhost:9500
 
