@@ -63,6 +63,6 @@ Note: we don't call webpack because fighweel will do this for us.
   ```
 - Run App
   ```bash
-  yarn webpack
+  node server.js
   ```
-- Open `index.html` file in the browser
+- Browser should auto open to http://localhost:9000
