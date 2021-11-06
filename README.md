@@ -53,3 +53,16 @@ Note: we don't call webpack because fighweel will do this for us.
 - Visit App
   http://localhost:9500
 
+
+## Require Method #4 - vanilla JS
+
+- Checkout `firebase-method-4` branch
+- Build JavaScript Deps
+  ```bash
+  yarn install
+  ```
+- Run App
+  ```bash
+  yarn webpack
+  ```
+- Open `index.html` file in the browser
