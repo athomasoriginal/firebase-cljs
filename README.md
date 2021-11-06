@@ -1,10 +1,14 @@
 # firebase-webpack
 
-## Quick Start
+There are two branches.  Each branch uses a different bundling strategy:
 
+
+## Require Method #1 - `:target :bundle`
+
+- Checkout `master` branch
 - Build JavaScript Deps
   ```bash
-  npm install
+  yarn install
   ```
 - Run App
   ```bash
@@ -14,10 +18,23 @@
   http://localhost:9500
 
 
-## Build Production
+## Require Method #2 - `:foreign-libs`
 
-- Build production JavaScript bundle
-
+- Checkout `firebase-method-2` branch
+- Build JavaScript Deps
   ```bash
-  clj -M:prod
+  yarn install
   ```
+- Build foreign-lib
+  ```bash
+  yarn webpack
+  ```
+- Run App
+  ```bash
+  clj -M:dev
+  ```
+- Visit App
+  http://localhost:9500
+
+
+
