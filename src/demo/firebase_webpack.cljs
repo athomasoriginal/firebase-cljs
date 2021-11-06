@@ -1,7 +1,7 @@
 (ns ^:figwheel-hooks demo.firebase-webpack
   (:require
-    ["@firebase/app"  :as firebase]
-    ["@firebase/auth" :as auth]
+    [initialize-app]
+    [get-auth]
     [reagent.dom     :as r.dom]))
 
 
@@ -47,8 +47,8 @@
 (defonce start-up
   (do
 
-    (let [app      (js-invoke firebase "initializeApp" firebase-config)
-          app-auth (js-invoke auth "getAuth" app)]
+    (let [app      (initialize-app firebase-config)
+          app-auth (get-auth app)]
 
       (mount)
 

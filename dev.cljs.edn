@@ -1,4 +1,14 @@
-^{:auto-bundle :webpack
-  :watch-dirs  ["src"]
+^{:watch-dirs  ["src"]
   :css-dirs    ["resources"]}
-{:main demo.firebase-webpack}
+{:main          demo.firebase-webpack
+ :infer-externs true
+ :npm-deps      false
+ :foreign-libs  [{:file           "dist/index.js"
+                  :provides       ["react"
+                                   "react-dom"
+                                   "initialize-app"
+                                   "get-auth"]
+                  :global-exports {react          React
+                                   react-dom      ReactDOM
+                                   initialize-app initializeApp
+                                   get-auth       getAuth}}]}
