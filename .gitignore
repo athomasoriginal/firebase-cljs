@@ -1,0 +1,7 @@
+# clojure
+.cpcache
+out
+target
+
+# javascript
+node_modules
