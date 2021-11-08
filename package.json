@@ -1,6 +1,12 @@
 {
   "name": "firebase-webpack",
+  "main": "main_bundle.js",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-replace": "^3.0.0",
+    "parcel": "^2.0.0",
+    "rollup": "^2.59.0",
     "webpack": "5.30.0",
     "webpack-cli": "4.6.0"
   },
