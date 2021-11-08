@@ -70,3 +70,15 @@ scenarios.  The idea is:
 - Visit App
   http://localhost:9500
 
+## Require Method #4 - vanilla JS
+
+- Checkout `firebase-method-4` branch
+- Build JavaScript Deps
+  ```bash
+  yarn install
+  ```
+- Run App
+  ```bash
+  node server.js
+  ```
+- Browser should auto open to http://localhost:9000
