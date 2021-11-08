@@ -1,6 +1,30 @@
 # firebase-webpack
 
-There are two branches.  Each branch uses a different bundling strategy:
+This repo illustrates a problem I found when trying to use the `firebase` npm
+package in CLJS.
+
+When we require firebase in CLJS
+
+```clojure
+["@firebase/app" :as app]
+["@firebase/auth" :as auth]
+```
+
+And then try to intialize the app
+
+```clojure
+(let [app      (js-invoke firebase "initializeApp" firebase-config)
+      app-auth (js-invoke auth "getAuth" app)]
+```
+
+We get an error in the console:
+
+```bash
+Error: Component auth has not been registered yet
+```
+
+The `master` branch illustrates this scenario is CLJS and I have created another
+branch called `firebase-method-4` which reproduces the issues in JS.
 
 
 ## Require Method #1 - `:target :bundle`
