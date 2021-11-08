@@ -11,8 +11,8 @@ const config = {
 }
 
 
-const auth = npmDeps["firebase/app"].initializeApp(config)
-const app = npmDeps["firebase/auth"].getAuth(auth);
+const auth = npmDeps["@firebase/app"].initializeApp(config)
+const app = npmDeps["@firebase/auth"].getAuth(auth);
 
 console.log(auth)
 console.log(app)
